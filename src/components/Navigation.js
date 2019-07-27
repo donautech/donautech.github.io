@@ -6,12 +6,12 @@ class Navigation extends React.Component {
         return (
             <nav className="navbar navbar-light bg-light static-top">
                 <div className="container">
-                    <Link className="navbar-brand" to="/" >DonauTech</Link>
+                    <Link className="navbar-brand" to="/">DonauTech</Link>
                     <div>
-                        <Link to="/about" style={{marginRight:10}}>About us</Link>
-                        <Link to="/contacts" style={{marginRight:10}}>Contacts</Link>
+                        {/*<Link  style={{marginRight:10}}>About us</Link>*/}
+                        {/*<Link  style={{marginRight:10}}>Contacts</Link>*/}
                         <a className="btn btn-primary"
-                           href="mailto:info@donau.tech?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding my company!%0d%0d Please contact us by any of the contacts below:"
+                           href="mailto:info@donau.tech?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding our company/product!%0d%0d Please contact us by any of the contacts below:"
                            style={{marginRight:10}}>Free AI consultancy</a>
                     </div>
                 </div>
