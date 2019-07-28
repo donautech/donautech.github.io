@@ -27,6 +27,10 @@ header.masthead {
   padding-bottom: 8rem;
 }
 
+.ai {
+  background: url("../img/bg_ai_weekly.jpeg") no-repeat center center;
+}
+
 header.masthead .overlay {
   position: absolute;
   background-color: #212529;

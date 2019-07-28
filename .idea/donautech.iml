@@ -11,5 +11,6 @@
     <orderEntry type="library" name="react.production" level="application" />
     <orderEntry type="library" name="react-dom.production" level="application" />
     <orderEntry type="library" name="embed" level="application" />
+    <orderEntry type="library" name="mc-validate" level="application" />
   </component>
 </module>
