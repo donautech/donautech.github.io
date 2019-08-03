@@ -10,13 +10,14 @@ class AiWeekly extends React.Component {
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <Grid container justify="center" spacing={2}>
-                            {[0, 1].map(value => (
+                            {[0].map(value => (
                                 <Grid key={value} item>
                                     <Paper style={{
                                         minHeight: "50vh",
-                                        width: "50vh",
+                                        width: "120vh",
+                                        padding: "1vh"
                                     }}>
-                                        No previous articles :)
+                                        <h5 ><li><a  href="https://mailchi.mp/75067716edb7/ai-weekly-001">AI Weekly #001</a></li></h5>
                                     </Paper>
                                 </Grid>
                             ))}
