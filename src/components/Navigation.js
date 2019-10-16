@@ -10,7 +10,6 @@ class Navigation extends React.Component {
                     <div>
                         {/*<Link  style={{marginRight:10}}>About us</Link>*/}
                         {/*<Link  style={{marginRight:10}}>Contacts</Link>*/}
-                        <Link to="/aiweekly" style={{marginRight:10}}>AI Weekly</Link>
                         <a className="btn btn-primary"
                            href="mailto:info@donau.tech?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding our company/product!%0d%0d Please contact us by any of the contacts below:"
                            style={{marginRight:10}}>Free AI consultancy</a>

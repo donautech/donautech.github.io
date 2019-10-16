@@ -14,7 +14,6 @@ function App() {
             <div>
                 <Navigation/>
                 <Route exact path="/" component={MainScreen}/>
-                <Route path="/aiweekly" component={WeeklyAiScreen}/>
                 {/*<Route path="/about" component={AboutScreen}/>*/}
                 {/*<Route path="/contacts" component={ContactsScreen}/>*/}
                 <Footer/>
