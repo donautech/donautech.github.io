@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="922bef22-aeb2-4859-9d89-28fe57594f3e" name="Default Changelist" comment="Added Ai weekly #001">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-showcase-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-showcase-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-showcase-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-showcase-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-showcase-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-showcase-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/bg-showcase-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/bg-showcase-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/bg-showcase-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/bg-showcase-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/bg-showcase-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/bg-showcase-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1ebe4223.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1ebe4223.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.da893e05.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.da893e05.chunk.js.map" beforeDir="false" />
+    <list default="true" id="922bef22-aeb2-4859-9d89-28fe57594f3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/precache-manifest.4509e8c7269cf351be343e3bde66720e.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +38,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img/bg-showcase-1.jpg">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -143,18 +136,7 @@
             <path>
               <item name="donautech" type="b2602c69:ProjectViewProjectNode" />
               <item name="donautech" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donautech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donautech" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="donautech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="donautech" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +204,7 @@
       <workItem from="1564593207341" duration="335000" />
       <workItem from="1564840831078" duration="1621000" />
       <workItem from="1564996642413" duration="5000" />
-      <workItem from="1571216939141" duration="657000" />
+      <workItem from="1571216939141" duration="885000" />
     </task>
     <task id="LOCAL-00001" summary="Updated data for website">
       <created>1559033287478</created>
@@ -301,11 +283,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564841262338</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="optimized images">
+      <created>1571217734822</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571217734822</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24597000" />
+    <option name="totallyTimeSpent" value="24825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="971" extended-state="6" />
@@ -327,7 +316,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.4573379" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32921812" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.7360637" />
       <window_info anchor="bottom" id="YouTrack" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -399,7 +388,8 @@
     <MESSAGE value="redeployed app" />
     <MESSAGE value="Added AIWeekly subscription" />
     <MESSAGE value="Added Ai weekly #001" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Ai weekly #001" />
+    <MESSAGE value="optimized images" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AiWeekly.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -630,16 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/bg-showcase-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -651,6 +624,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/img/bg-showcase-1.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
