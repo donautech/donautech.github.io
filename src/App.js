@@ -7,18 +7,11 @@ import IconsGrid from "./components/IconsGrid";
 import Showcase from "./components/ShowCase";
 import Footer from "./components/Footer";
 import AiWeekly from "./components/AiWeekly";
+import Home from "./v2/Home";
 
 function App() {
     return (
-        <Router>
-            <div>
-                <Navigation/>
-                <Route exact path="/" component={MainScreen}/>
-                {/*<Route path="/about" component={AboutScreen}/>*/}
-                {/*<Route path="/contacts" component={ContactsScreen}/>*/}
-                <Footer/>
-            </div>
-        </Router>
+        <Home></Home>
     );
 }
 
