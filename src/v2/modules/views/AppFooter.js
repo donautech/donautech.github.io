@@ -5,6 +5,7 @@ import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
+import {useTranslation} from "react-i18next";
 
 function Copyright() {
   return (
@@ -63,18 +64,26 @@ const useStyles = makeStyles(theme => ({
 
 const LANGUAGES = [
   {
-    code: 'en-US',
+    code: 'en',
     name: 'English',
   },
   {
-    code: 'fr-FR',
-    name: 'Français',
+    code: 'de',
+    name: 'Deutsch',
   },
 ];
 
 export default function AppFooter() {
   const classes = useStyles();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = React.useState('lang');
 
+  const handleLanguageChange = event => {
+    let value = event.target.value;
+    console.log(value)
+    i18n.changeLanguage(value);
+    setLanguage(value);
+  };
   return (
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
@@ -122,6 +131,7 @@ export default function AppFooter() {
               SelectProps={{
                 native: true,
               }}
+              onChange={handleLanguageChange}
               className={classes.language}
             >
               {LANGUAGES.map(language => (

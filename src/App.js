@@ -7,6 +7,7 @@ import SignUp from "./v2/SignUp";
 import Terms from "./v2/Terms";
 import Privacy from "./v2/Privacy";
 import ForgotPassword from "./v2/ForgotPassword";
+import "./v2/i18n"
 
 function App() {
     return (

@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import { useTranslation } from 'react-i18next';
 
 const styles = theme => ({
   title: {
@@ -37,6 +38,7 @@ const styles = theme => ({
 
 function AppAppBar(props) {
   const { classes } = props;
+  const { t, i18n } = useTranslation();
 
   return (
     <div>
@@ -50,7 +52,7 @@ function AppAppBar(props) {
             className={classes.title}
             href="/"
           >
-            {'DonauTech'}
+            {t('DonauTech')}
           </Link>
           <div className={classes.right}>
             <Link
