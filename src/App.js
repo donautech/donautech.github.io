@@ -1,53 +1,26 @@
 import React from 'react';
 import './App.css';
 import {HashRouter as Router, Route} from "react-router-dom";
-import Navigation from "./components/Navigation";
-import MastHead from "./components/MastHead";
-import IconsGrid from "./components/IconsGrid";
-import Showcase from "./components/ShowCase";
-import Footer from "./components/Footer";
-import AiWeekly from "./components/AiWeekly";
 import Home from "./v2/Home";
+import SignIn from "./v2/SignIn";
+import SignUp from "./v2/SignUp";
+import Terms from "./v2/Terms";
+import Privacy from "./v2/Privacy";
+import ForgotPassword from "./v2/ForgotPassword";
 
 function App() {
     return (
-        <Home></Home>
+        <Router>
+            <div>
+                <Route exact path="/" component={Home}/>
+                <Route path="/sign-in" component={SignIn}/>
+                <Route path="/sign-up" component={SignUp}/>
+                <Route path="/terms" component={Terms}/>
+                <Route path="/privacy" component={Privacy}/>
+                <Route path="/forgot-password" component={ForgotPassword}/>
+            </div>
+        </Router>
     );
-}
-
-function MainScreen() {
-    return (
-        <div>
-            <MastHead title="IOT support and services to the scooter businesses"/>
-            <IconsGrid/>
-            <Showcase/>
-        </div>
-    )
-}
-
-function WeeklyAiScreen() {
-    return (
-        <div>
-            <MastHead title="AI Weekly newsletter" fieldEnabled={true}/>
-            <AiWeekly/>
-        </div>
-    )
-}
-
-function AboutScreen() {
-    return (
-        <div>
-        </div>
-    )
-
-}
-
-function ContactsScreen() {
-    return (
-        <div>
-        </div>
-    )
-
 }
 
 export default App;
