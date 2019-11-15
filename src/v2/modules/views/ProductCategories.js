@@ -89,8 +89,8 @@ function ProductCategories(props) {
   const images = [
     {
       url:
-        'https://images.unsplash.com/photo-1534081333815-ae5019106622?auto=format&fit=crop&w=400&q=80',
-      title: 'Snorkeling',
+        '/img/showcase-software-dev.jpg',
+      title: 'Product/Software development',
       width: '40%',
     },
     {
@@ -101,8 +101,8 @@ function ProductCategories(props) {
     },
     {
       url:
-        'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=400&q=80',
-      title: 'Hiking',
+        '/img/showcase-3.png',
+      title: 'Upcoming product ;)',
       width: '40%',
     },
     {
@@ -125,8 +125,8 @@ function ProductCategories(props) {
     },
     {
       url:
-        'https://images.unsplash.com/photo-1506941433945-99a2aa4bd50a?auto=format&fit=crop&w=400&q=80',
-      title: 'Walking',
+        '/img/showcase-lovepons.png',
+      title: 'Lovepons',
       width: '40%',
     },
     {
@@ -137,8 +137,8 @@ function ProductCategories(props) {
     },
     {
       url:
-        'https://images.unsplash.com/photo-1518136247453-74e7b5265980?auto=format&fit=crop&w=400&q=80',
-      title: 'Reading',
+        '/img/bg-showcase-1.jpg',
+      title: 'IOT/Scooter Business services',
       width: '40%',
     },
   ];
@@ -146,7 +146,7 @@ function ProductCategories(props) {
   return (
     <Container className={classes.root} component="section">
       <Typography variant="h4" marked="center" align="center" component="h2">
-        For all tastes and all desires
+        Our products and services
       </Typography>
       <div className={classes.images}>
         {images.map(image => (
