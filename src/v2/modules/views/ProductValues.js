@@ -53,15 +53,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues1.svg"
+                src="/img/icon/handshake.png"
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                The best luxury hotels
+                Long-term relationships
               </Typography>
               <Typography variant="h5">
-                {'From the latest trendy boutique hotel to the iconic palace with XXL pool'}
-                {', go for a mini-vacation just a few subway stops away from your home.'}
+                {'We\'re aiming for long-term relationships'}
+                {', there\'s no place for such things as fraud or overcharges.'}
               </Typography>
             </div>
           </Grid>
@@ -69,15 +69,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues2.svg"
+                src="/img/icon/java.png"
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                New experiences
+                Best technology stack
               </Typography>
               <Typography variant="h5">
-                {'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '}
-                {'your Sundays will not be alike.'}
+                {'We use technologies that proven themselves over the long run'}
+                {', but it doesn\'t mean there\'s no place for something new.'}
               </Typography>
             </div>
           </Grid>
@@ -85,15 +85,15 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src="/static/themes/onepirate/productValues3.svg"
+                src="/img/icon/customer-review.png"
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Exclusive rates
+                Real customer centricity
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {'We have absolutely fantastic system for managing your product, '}
+                {'with dashboard, PMS, and even AI forecasts.'}
               </Typography>
             </div>
           </Grid>
