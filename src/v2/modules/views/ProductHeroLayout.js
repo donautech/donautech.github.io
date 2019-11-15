@@ -16,6 +16,9 @@ const styles = theme => ({
       maxHeight: 1300,
     },
   },
+  logo: {
+    marginBottom: theme.spacing(3)
+  },
   container: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(14),
@@ -55,10 +58,10 @@ function ProductHeroLayout(props) {
   return (
     <section className={classes.root}>
       <Container className={classes.container}>
-        <img
-          src="/static/themes/onepirate/productHeroWonder.png"
-          alt="wonder"
-          width="147"
+        <img className={classes.logo}
+          src="/img/donautech_logox2.png"
+          alt="logo"
+          width="80"
           height="80"
         />
         {children}
@@ -66,9 +69,9 @@ function ProductHeroLayout(props) {
         <div className={clsx(classes.background, backgroundClassName)} />
         <img
           className={classes.arrowDown}
-          src="/static/themes/onepirate/productHeroArrowDown.png"
-          height="16"
-          width="12"
+          src="/img/arrow_down.png"
+          height="50"
+          width="50"
           alt="arrow down"
         />
       </Container>
