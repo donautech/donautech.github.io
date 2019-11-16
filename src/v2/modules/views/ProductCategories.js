@@ -155,7 +155,7 @@ function ProductCategories(props) {
       width: '38%',
       description: (<div>
         <Typography variant="body1" gutterBottom>
-          We write articles at medium ranging from mobile development lifehack to Kubernetes and Machine Learning,
+          We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning,
           you should definitely check them out
         </Typography>
         <Button
