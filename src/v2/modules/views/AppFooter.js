@@ -79,8 +79,7 @@ export default function AppFooter() {
   const [language, setLanguage] = React.useState('lang');
 
   const handleLanguageChange = event => {
-    let value = event.target.value;
-    console.log(value)
+    let value = event.target.value
     i18n.changeLanguage(value);
     setLanguage(value);
   };
@@ -97,8 +96,8 @@ export default function AppFooter() {
               spacing={2}
             >
               <Grid item className={classes.icons}>
-                <a href="https://material-ui.com/" className={classes.icon}>
-                  <img src="/static/themes/onepirate/appFooterFacebook.png" alt="Facebook" />
+                <a href="https://www.facebook.com/donautech/" className={classes.icon}>
+                  <img src="/img/icon/facebook.png" alt="Facebook" />
                 </a>
                 <a href="https://twitter.com/MaterialUI" className={classes.icon}>
                   <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />

@@ -1,9 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import Dialog from "@material-ui/core/Dialog";
+import Slide from "@material-ui/core/Slide";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import {useTranslation} from "react-i18next";
 
 const styles = theme => ({
   root: {
@@ -81,104 +87,154 @@ const styles = theme => ({
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
   },
+  card: {
+    maxWidth: 345,
+  },
+  media: {
+    height: '30vh',
+  },
+});
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
 });
 
 function ProductCategories(props) {
-  const { classes } = props;
+  const {classes} = props;
+  const {t, i18n} = useTranslation();
+  const [detailsDialogOpen, setDetailsDialogOpen] = React.useState(false);
+  const [selectedDialogImage, setSelectedDialogImage] = React.useState({});
+
+  const handleClickOpen = (image) => {
+    setSelectedDialogImage(image);
+    setDetailsDialogOpen(true);
+  };
+
+  const handleClickClose = () => {
+    setDetailsDialogOpen(false);
+  };
 
   const images = [
     {
       url:
-        '/img/showcase-software-dev.jpg',
+          '/img/showcase-software-dev.jpg',
       title: 'Product/Software development',
       width: '40%',
+      description: ""
     },
     {
       url:
-        'https://images.unsplash.com/photo-1531299204812-e6d44d9a185c?auto=format&fit=crop&w=400&q=80',
-      title: 'Massage',
+          '',
+      title: 'TODO',
       width: '20%',
     },
     {
       url:
-        '/img/showcase-3.png',
+          '/img/showcase-3.png',
       title: 'Upcoming product ;)',
       width: '40%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1453747063559-36695c8771bd?auto=format&fit=crop&w=400&q=80',
-      title: 'Tour',
+          '/img/medium.png',
+      title: 'Medium articles',
       width: '38%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1523309996740-d5315f9cc28b?auto=format&fit=crop&w=400&q=80',
-      title: 'Gastronomy',
+          '/img/behaiv_usage.png',
+      title: 'Behaiv',
       width: '38%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?auto=format&fit=crop&w=400&q=80',
-      title: 'Shopping',
+          '',
+      title: 'TODO',
       width: '24%',
     },
     {
       url:
-        '/img/showcase-lovepons.png',
+          '/img/showcase-lovepons.png',
       title: 'Lovepons',
       width: '40%',
     },
     {
       url:
-        'https://images.unsplash.com/photo-1533727937480-da3a97967e95?auto=format&fit=crop&w=400&q=80',
-      title: 'Fitness',
+          '',
+      title: 'TODO',
       width: '20%',
     },
     {
       url:
-        '/img/bg-showcase-1.jpg',
+          '/img/bg-showcase-1.jpg',
       title: 'IOT/Scooter Business services',
       width: '40%',
     },
   ];
 
   return (
-    <Container className={classes.root} component="section">
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        Our products and services
-      </Typography>
-      <div className={classes.images}>
-        {images.map(image => (
-          <ButtonBase
-            key={image.title}
-            className={classes.imageWrapper}
-            style={{
-              width: image.width,
-            }}
-          >
-            <div
-              className={classes.imageSrc}
-              style={{
-                backgroundImage: `url(${image.url})`,
-              }}
-            />
-            <div className={classes.imageBackdrop} />
-            <div className={classes.imageButton}>
-              <Typography
-                component="h3"
-                variant="h6"
-                color="inherit"
-                className={classes.imageTitle}
+      <Container className={classes.root} component="section">
+        <Typography variant="h4" marked="center" align="center" component="h2">
+          {t('Our products and services')}
+        </Typography>
+        <div className={classes.images}>
+          {images.map(image => (
+              <ButtonBase
+                  key={image.title}
+                  className={classes.imageWrapper}
+                  onClick={() => handleClickOpen(image)}
+                  style={{
+                    width: image.width,
+                  }}
               >
-                {image.title}
-                <div className={classes.imageMarked} />
+                <div
+                    className={classes.imageSrc}
+                    style={{
+                      backgroundImage: `url(${image.url})`,
+                    }}
+                />
+                <div className={classes.imageBackdrop}/>
+                <div className={classes.imageButton}>
+                  <Typography
+                      component="h3"
+                      variant="h6"
+                      color="inherit"
+                      className={classes.imageTitle}
+                  >
+                    {t(image.title)}
+                    <div className={classes.imageMarked}/>
+                  </Typography>
+                </div>
+              </ButtonBase>
+          ))}
+        </div>
+        <Dialog
+            open={detailsDialogOpen}
+            maxWidth='md'
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClickClose}
+            aria-labelledby="alert-dialog-slide-title"
+            aria-describedby="alert-dialog-slide-description"
+        >
+          <CardActionArea>
+            <CardMedia
+                className={classes.media}
+                image={selectedDialogImage.url}
+                title="Contemplative Reptile"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {selectedDialogImage.title}
               </Typography>
-            </div>
-          </ButtonBase>
-        ))}
-      </div>
-    </Container>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Dialog>
+      </Container>
   );
 }
 
