@@ -6,6 +6,8 @@ import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import {useTranslation} from "react-i18next";
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 function Copyright() {
   return (
@@ -41,10 +43,10 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: theme.palette.secondary.light,
     marginRight: theme.spacing(1),
     '&:hover': {
-      backgroundColor: theme.palette.warning.dark,
+      backgroundColor: theme.palette.warning.light,
     },
   },
   list: {
@@ -97,10 +99,10 @@ export default function AppFooter() {
             >
               <Grid item className={classes.icons}>
                 <a href="https://www.facebook.com/donautech/" className={classes.icon}>
-                  <img src="/img/icon/facebook.png" alt="Facebook" />
+                  <FacebookIcon/>
                 </a>
-                <a href="https://twitter.com/MaterialUI" className={classes.icon}>
-                  <img src="/static/themes/onepirate/appFooterTwitter.png" alt="Twitter" />
+                <a href="https://twitter.com/DonauTech" className={classes.icon}>
+                  <TwitterIcon/>
                 </a>
               </Grid>
               <Grid item>
