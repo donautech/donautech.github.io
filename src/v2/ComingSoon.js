@@ -28,7 +28,7 @@ function ComingSoon() {
       <AppForm>
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
-            Comming soon :C
+            Coming soon :C
           </Typography>
           <Typography variant="body2" align="center">
             {'We\'re working on our customer panel, let us notify you when it\'s done.'}
