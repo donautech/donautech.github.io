@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
-import TextField from '../components/TextField';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
 
@@ -21,7 +20,7 @@ const styles = theme => ({
   card: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: theme.palette.secondary.dark,
     padding: theme.spacing(8, 3),
   },
   cardContent: {
@@ -59,11 +58,18 @@ const styles = theme => ({
 });
 
 function ProductCTA(props) {
-  const { classes } = props;
+  const {classes} = props;
   const [open, setOpen] = React.useState(false);
 
   const handleSubmit = event => {
     event.preventDefault();
+    fetch('https://gmx.us20.list-manage.com/subscribe/post?u=270d60d5d5a2d14fdc4f7d52b&id=d3ca9d9513', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
     setOpen(true);
   };
 
@@ -76,15 +82,22 @@ function ProductCTA(props) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form onSubmit={handleSubmit} className={classes.cardContent}>
+            <form action="https://gmx.us20.list-manage.com/subscribe/post?u=270d60d5d5a2d14fdc4f7d52b&id=d3ca9d9513"
+                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                  target="_blank" noValidate className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Receive offers
+                Keep in touch
               </Typography>
               <Typography variant="h5">
-                Taste the holidays of the everyday close to home.
+                We'll send you our offers, vacancies and articles once a month
               </Typography>
-              <TextField noBorder className={classes.textField} placeholder="Your email" />
-              <Button type="submit" color="primary" variant="contained" className={classes.button}>
+              <input type="email" className="form-control required" name="EMAIL"
+                     placeholder="name@example.com" id="mce-EMAIL"/>
+              <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input
+                type="text" name="b_270d60d5d5a2d14fdc4f7d52b_d3ca9d9513" tabIndex={-1}
+                defaultValue/></div>
+              <Button id="mc-embedded-subscribe" type="submit" defaultValue="Subscribe" color="primary"
+                      variant="contained" className={classes.button}>
                 Keep me updated
               </Button>
             </form>
@@ -92,9 +105,9 @@ function ProductCTA(props) {
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
           <Hidden smDown>
-            <div className={classes.imageDots} />
+            <div className={classes.imageDots}/>
             <img
-              src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?auto=format&fit=crop&w=750&q=80"
+              src="/img/mail/mail1.jpg"
               alt="call to action"
               className={classes.image}
             />
@@ -104,7 +117,7 @@ function ProductCTA(props) {
       <Snackbar
         open={open}
         onClose={handleClose}
-        message="We will send you our best offers, once a week."
+        message="Welcome to Donau.Community :)"
       />
     </Container>
   );
