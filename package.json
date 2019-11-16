@@ -2,11 +2,13 @@
   "name": "donautech",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://donau.tech",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.5.1",
     "clsx": "^1.0.4",
     "final-form": "^4.18.6",
+    "gh-pages": "^2.1.1",
     "i18next": "^19.0.0",
     "markdown-to-jsx": "^6.10.3",
     "prop-types": "^15.7.2",
