@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import Snackbar from '../components/Snackbar';
 import Button from '../components/Button';
+import { useTranslation } from 'react-i18next';
 
 const styles = theme => ({
   root: {
@@ -58,6 +59,7 @@ const styles = theme => ({
 });
 
 function ProductCTA(props) {
+  const { t, i18n } = useTranslation();
   const {classes} = props;
   const [open, setOpen] = React.useState(false);
 
@@ -86,10 +88,10 @@ function ProductCTA(props) {
                   method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                   target="_blank" noValidate className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
-                Keep in touch
+                {t("Keep in touch")}
               </Typography>
               <Typography variant="h5">
-                We'll send you our offers, vacancies and articles once a month
+                {t("We'll send you our offers, vacancies and articles once a month")}
               </Typography>
               <input type="email" className="form-control required" name="EMAIL"
                      placeholder="name@example.com" id="mce-EMAIL"/>
@@ -98,7 +100,7 @@ function ProductCTA(props) {
                 defaultValue/></div>
               <Button id="mc-embedded-subscribe" type="submit" defaultValue="Subscribe" color="primary"
                       variant="contained" className={classes.button}>
-                Keep me updated
+                {t("Keep me updated")}
               </Button>
             </form>
           </div>
