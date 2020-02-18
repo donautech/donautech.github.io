@@ -25,11 +25,39 @@ const resources = {
       "with dashboard, PMS, and even AI forecasts.": "with dashboard, PMS, and even AI forecasts.",
 
       "Product/Software development": "Product/Software development",
+      "We provide enterprise-grade software planning and development": "We provide enterprise-grade software planning and development",
+      "Mobile + PC": "Mobile + PC",
+      "Blockchain": "Blockchain",
+
       "Machine Learning": "Machine Learning",
+      "Machine Learning Algorithms": "Machine Learning Algorithms",
+      "Computer Vision": "Computer Vision",
+      "Supervised Machine Learning": "Supervised Machine Learning",
+      "Unsupervised Machine Learning": "Unsupervised Machine Learning",
+      "Deep Learning": "Deep Learning",
+      "Neural Networks": "Neural Networks",
+      "Reinforcement Learning": "Reinforcement Learning",
+      "Predictive Learning": "Predictive Learning",
+
       "Upcoming product ;)": "Upcoming product ;)",
+      
       "Medium articles": "Medium articles",
+      "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out": "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out",
+      "Open articles": "Open articles",
+
       "Behaiv": "Behaiv",
+      "Behaiv is a high-level AI tool that helps users to navigate faster through the app,": "Behaiv is a high-level AI tool that helps users to navigate faster through the app,",
+      "predict what users want to open and take appropriate actions.": "predict what users want to open and take appropriate actions.",
+      "It was developed with a focus on simplicity of usage.": "It was developed with a focus on simplicity of usage.",
+      "Instead of overwhelming developers with burden of implementation,": "Instead of overwhelming developers with burden of implementation,",
+      "they only need to write few lines of code.": "they only need to write few lines of code.",
+      "Our company covers Java, Swift, Python and Javascript versions of this library": "Our company covers Java, Swift, Python and Javascript versions of this library",
+      "Look through our library": "Look through our library",
+
       "YouTube Lessons": "YouTube Lessons",
+      "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics": "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics",
+      "Visit YouTube channel": "Visit YouTube channel",
+
       "Lovepons": "Lovepons",
       "Your next project?": "Your next project?",
       "IOT/Scooter Business services": "IOT/Scooter Business services",
@@ -54,6 +82,8 @@ const resources = {
 
       "Coming soon": "Coming soon :C",
       "We're working on our customer panel, let us notify you when it's done.": "We're working on our customer panel, let us notify you when it's done."
+
+
     }
   },
   de: {
@@ -78,11 +108,40 @@ const resources = {
       "with dashboard, PMS, and even AI forecasts.": "with dashboard, PMS, and even AI forecasts. DE",
 
       "Product/Software development": "Produkt/Software Entwicklung",
+      "We provide enterprise-grade software planning and development": "We provide enterprise-grade software planning and development DE",
+      "Mobile + PC": "Mobile + PC DE",
+      "Blockchain": "Blockchain DE",
+
       "Machine Learning": "Machine Learning DE",
+      "Machine Learning Algorithms": "Machine Learning Algorithms DE",
+      "Computer Vision": "Computer Vision DE",
+      "Supervised Machine Learning": "Supervised Machine Learning DE",
+      "Unsupervised Machine Learning": "Unsupervised Machine Learning DE",
+      "Deep Learning": "Deep Learning DE",
+      "Neural Networks": "Neural Networks DE",
+      "Reinforcement Learning": "Reinforcement Learning DE",
+      "Predictive Learning": "Predictive Learning DE",
+
       "Upcoming product ;)": "Bevorstehendes Produkt ;)",
+
       "Medium articles": "Medium Artikel",
+      "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out": "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out DE",
+      "Open articles": "Open articles DE",
+
       "Behaiv": "Behaiv DE",
+      "Behaiv is a high-level AI tool that helps users to navigate faster through the app," : "Behaiv is a high-level AI tool that helps users to navigate faster through the app DE,",
+      "predict what users want to open and take appropriate actions." : "predict what users want to open and take appropriate actions DE.",
+      "It was developed with a focus on simplicity of usage.": "It was developed with a focus on simplicity of usage DE.",
+      "Instead of overwhelming developers with burden of implementation,": "Instead of overwhelming developers with burden of implementation DE,",
+      "they only need to write few lines of code.": "they only need to write few lines of code DE.",
+      "Our company covers Java, Swift, Python and Javascript versions of this library": "Our company covers Java, Swift, Python and Javascript versions of this library DE",
+      "Look through our library": "Look through our library DE",
+
       "YouTube Lessons": "YouTube Lessons DE",
+      "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics": "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics DE",
+      "Visit YouTube channel": "Visit YouTube channel DE",
+
+
       "Lovepons": "Lovepons DE",
       "Your next project?": "Your next project? DE",
       "IOT/Scooter Business services": "IOT / Scooter Business-Dienstleistungen",
