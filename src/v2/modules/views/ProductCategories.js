@@ -6,11 +6,16 @@ import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import Dialog from "@material-ui/core/Dialog";
 import Slide from "@material-ui/core/Slide";
+import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import {useTranslation} from "react-i18next";
 import Button from "../components/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Slideshow from "./Slideshow";
+import CloseIcon from '@material-ui/icons/Close';
+
 
 const styles = theme => ({
   root: {
@@ -163,6 +168,35 @@ const styles = theme => ({
     flexDirection: 'column',
     flexWrap: 'wrap',
     maxHeight: '170px',
+  },
+  rootEmpty: {
+    display: 'flex',
+  },
+  detailsEmpty: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  contentEmpty: {
+    flex: '1 0 auto',
+  },
+  coverEmpty: {
+    width: '80%',
+  },
+  titleEmpty: {
+    padding: '10px',
+    textAlign: 'center'
+  },
+  subtitleEmpty: {
+    padding: '10px 20px',
+    textAlign: 'center'
+  },
+  itemEmpty: {
+    padding: '10px 20px',
+  },
+  buttonEmpty: {
+    '&:focus': {
+      outline: 'none',
+    },
   }
 });
 
@@ -174,6 +208,8 @@ function ProductCategories(props) {
   const {classes} = props;
   const {t, i18n} = useTranslation();
   const [detailsDialogOpen, setDetailsDialogOpen] = React.useState(false);
+  const [emptyDialogOpen, setEmptyDialogOpen] = React.useState(false);
+  const [slideshowDialogOpen, setSlideshowDialogOpen] = React.useState(false);
   const [selectedDialogImage, setSelectedDialogImage] = React.useState({});
 
   const handleClickOpen = (image) => {
@@ -183,6 +219,22 @@ function ProductCategories(props) {
 
   const handleClickClose = () => {
     setDetailsDialogOpen(false);
+  };
+
+  const handleClickOpenEmpty = () => {
+    setEmptyDialogOpen(true);
+  };
+
+  const handleClickCloseEmpty = () => {
+    setEmptyDialogOpen(false);
+  };
+
+  const handleClickOpenSlideshow = () => {
+    setSlideshowDialogOpen(true);
+  };
+
+  const handleClickCloseSlideshow = () => {
+    setSlideshowDialogOpen(false);
   };
 
   const productAndSoftData = {
@@ -200,7 +252,7 @@ function ProductCategories(props) {
         <div className={classes.dialogproductAndSoftItem__wrap}>
           {
             productAndSoftData.backend.map ((elem, index) => {
-              return <div className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
+              return <div key={index} className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
             })
           }
         </div>
@@ -213,7 +265,7 @@ function ProductCategories(props) {
         <div className={classes.dialogproductAndSoftItem__wrap}>
           {
             productAndSoftData.mobileAndPc.map ((elem, index) => {
-              return <div className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
+              return <div key={index} className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
             })
           }
         </div>
@@ -226,7 +278,7 @@ function ProductCategories(props) {
         <div className={classes.dialogproductAndSoftItem__wrap}>
           {
             productAndSoftData.db.map ((elem, index) => {
-              return <div className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
+              return <div key={index} className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
             })
           }
         </div>
@@ -239,7 +291,7 @@ function ProductCategories(props) {
         <div className={classes.dialogproductAndSoftItem__wrap}>
           {
             productAndSoftData.blockchain.map ((elem, index) => {
-              return <div className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
+              return <div key={index} className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
             })
           }
         </div>
@@ -252,7 +304,7 @@ function ProductCategories(props) {
         <div className={classes.dialogproductAndSoftItem__wrapLast}>
           {
             productAndSoftData.machineLearning.map ((elem, index) => {
-              return <div className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
+              return <div key={index} className={classes.dialogproductAndSoftItem__item}>- {elem}</div>
             })
           }
         </div>
@@ -373,12 +425,12 @@ function ProductCategories(props) {
         {
           productAndSoftContent.map((elem, index) => {
             return index%2 === 0 ? 
-              <div className={classes.dialogproductAndSoftBlock}>
+              <div key={index} className={classes.dialogproductAndSoftBlock}>
                 <div className={classes.dialogproductAndSoftItem}>{elem.block}</div>
                 <img className={classes.dialogproductAndSoftImg} src={elem.imgUrl} width="350px" height="259px"/>
               </div> 
             :
-              <div className={classes.dialogproductAndSoftBlock}>
+              <div key={index} className={classes.dialogproductAndSoftBlock}>
                 <div className={classes.dialogproductAndSoftItemOrder} style={{paddingLeft: '130px'}}>{elem.block}</div>
                 <img className={classes.dialogproductAndSoftImgOrder} src={elem.imgUrl} width="350px" height="259px"/>
               </div> 
@@ -395,12 +447,12 @@ function ProductCategories(props) {
         {
           machineLearningContent.map((elem, index) => {
             return index%2 === 0 ? 
-              <div className={classes.dialogproductAndSoftBlock}>
+              <div key={index} className={classes.dialogproductAndSoftBlock}>
                 <div className={classes.dialogproductAndSoftItem}>{elem.block}</div>
                 <img className={classes.dialogproductAndSoftImg} src={elem.imgUrl} width="350px" height="259px"/>
               </div> 
             :
-              <div className={classes.dialogproductAndSoftBlock}>
+              <div key={index} className={classes.dialogproductAndSoftBlock}>
                 <div className={classes.dialogproductAndSoftItemOrder} style={{paddingLeft: '90px'}}>{elem.block}</div>
                 <img className={classes.dialogproductAndSoftImgOrder} src={elem.imgUrl} width="350px" height="259px"/>
               </div> 
@@ -557,10 +609,10 @@ function ProductCategories(props) {
           selectedDialogImage.title === t('Product/Software development') || selectedDialogImage.title === t('Machine Learning')  
           ? 
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2" className={classes.dialogTitle}>
+              <Typography gutterBottom variant="h5" component="div" className={classes.dialogTitle}>
                 {selectedDialogImage.title}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="div">
                 {selectedDialogImage.description}
               </Typography>
             </CardContent>
@@ -572,16 +624,76 @@ function ProductCategories(props) {
               title="Contemplative Reptile"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="div">
                 {selectedDialogImage.title}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
+              <Typography variant="body2" color="textSecondary" component="div">
                 {selectedDialogImage.description}
               </Typography>
             </CardContent>
           </CardActionArea>
         }
       </Dialog>
+
+      <Dialog
+        scroll='body'
+        open={emptyDialogOpen}
+        maxWidth='md'
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClickCloseEmpty}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <Card className={classes.rootEmpty}>
+          <div className={classes.detailsEmpty}>
+            <CardContent className={classes.contentEmpty}>
+              <IconButton className={classes.buttonEmpty} size="small" onClick={handleClickCloseEmpty}>
+                <CloseIcon/>
+              </IconButton>
+              <Typography component="h1" variant="h5" className={classes.titleEmpty}>
+                Title
+              </Typography>
+              <Typography component="h2" variant="h5" className={classes.subtitleEmpty}>
+                Subtitle
+              </Typography>
+              <Typography component="div" variant="h5" className={classes.listEmpty}>
+                <Typography className={classes.itemEmpty}>- big text big text big text big text big text big text big text big text</Typography>
+                <Typography className={classes.itemEmpty}>- big text big text big text big text big text big text big text big text big text</Typography>
+                <Typography className={classes.itemEmpty}>- big text big text big text big text big text big text big text big text big text</Typography>
+                <Typography className={classes.itemEmpty}>- big text big text big text big text big text big text big text big text big text big text</Typography>
+              </Typography>
+            </CardContent>
+          </div>
+          <CardMedia
+            className={classes.coverEmpty}
+            image="/img/backend.png"
+          />
+      </Card>
+      </Dialog>
+
+      <Button variant="outlined" color="primary" onClick={handleClickOpenEmpty}>
+        Open empty dialog
+      </Button>
+
+      <Dialog
+        scroll='body'
+        open={slideshowDialogOpen}
+        maxWidth='800px'
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClickCloseSlideshow}
+        aria-labelledby="alert-dialog-slide-title"
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <Slideshow/>
+      </Dialog>
+
+      <Button variant="outlined" color="primary" onClick={handleClickOpenSlideshow}>
+        Open slideshow dialog
+      </Button>
+
+
     </Container>
   );
 }
