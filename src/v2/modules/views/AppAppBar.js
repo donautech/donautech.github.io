@@ -60,6 +60,15 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={classes.rightLink}
+              href="/#/our-team"
+            >
+              {t('Our team')}
+            </Link>
+            <Link
+              color="inherit"
+              variant="h6"
+              underline="none"
+              className={classes.rightLink}
               href="/#/sign-in"
             >
               {t('Sign In')}

@@ -8,6 +8,7 @@ const resources = {
       "DonauTech": "DonauTech",
       "Sign In": "Sign In",
       "Sign Up": "Sign Up",
+      "Our team": "Our team",
 
       "Let's bring your ideas to life": "Let's bring your ideas to life",
       "Customers choose our company not because of technologies, but because of versatility and commitment": "Customers choose our company not because of technologies, but because of versatility and commitment",
@@ -91,6 +92,7 @@ const resources = {
       "DonauTech": "DonauTech DE",
       "Sign In": "Sign In DE",
       "Sign Up": "Sign Up DE",
+      "Our team": "Our team DE",
 
       "Let's bring your ideas to life": "Let's bring your ideas to life DE",
       "Customers choose our company not because of technologies, but because of versatility and commitment": "Customers choose our company not because of technologies, but because of versatility and commitment DE",
