@@ -25,11 +25,39 @@ const resources = {
       "with dashboard, PMS, and even AI forecasts.": "with dashboard, PMS, and even AI forecasts.",
 
       "Product/Software development": "Product/Software development",
+      "We provide enterprise-grade software planning and development": "We provide enterprise-grade software planning and development",
+      "Mobile + PC": "Mobile + PC",
+      "Blockchain": "Blockchain",
+
       "Machine Learning": "Machine Learning",
+      "Machine Learning Algorithms": "Machine Learning Algorithms",
+      "Computer Vision": "Computer Vision",
+      "Supervised Machine Learning": "Supervised Machine Learning",
+      "Unsupervised Machine Learning": "Unsupervised Machine Learning",
+      "Deep Learning": "Deep Learning",
+      "Neural Networks": "Neural Networks",
+      "Reinforcement Learning": "Reinforcement Learning",
+      "Predictive Learning": "Predictive Learning",
+
       "Upcoming product ;)": "Upcoming product ;)",
+
       "Medium articles": "Medium articles",
+      "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out": "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out",
+      "Open articles": "Open articles",
+
       "Behaiv": "Behaiv",
+      "Behaiv is a high-level AI tool that helps users to navigate faster through the app,": "Behaiv is a high-level AI tool that helps users to navigate faster through the app,",
+      "predict what users want to open and take appropriate actions.": "predict what users want to open and take appropriate actions.",
+      "It was developed with a focus on simplicity of usage.": "It was developed with a focus on simplicity of usage.",
+      "Instead of overwhelming developers with burden of implementation,": "Instead of overwhelming developers with burden of implementation,",
+      "they only need to write few lines of code.": "they only need to write few lines of code.",
+      "Our company covers Java, Swift, Python and Javascript versions of this library": "Our company covers Java, Swift, Python and Javascript versions of this library",
+      "Look through our library": "Look through our library",
+
       "YouTube Lessons": "YouTube Lessons",
+      "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics": "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics",
+      "Visit YouTube channel": "Visit YouTube channel",
+
       "Lovepons": "Lovepons",
       "Your next project?": "Your next project?",
       "IOT/Scooter Business services": "IOT/Scooter Business services",
@@ -54,6 +82,8 @@ const resources = {
 
       "Coming soon": "Coming soon :C",
       "We're working on our customer panel, let us notify you when it's done.": "We're working on our customer panel, let us notify you when it's done."
+
+
     }
   },
   de: {
@@ -78,11 +108,40 @@ const resources = {
       "with dashboard, PMS, and even AI forecasts.": "mit Dashboard-, PMS- und sogar AI-Vorhersagen.",
 
       "Product/Software development": "Produkt/Software Entwicklung",
+      "We provide enterprise-grade software planning and development": "Wir bieten Softwareplanung und -entwicklung für Unternehmen",
+      "Mobile + PC": "Mobile + PC",
+      "Blockchain": "Blockchain",
+
       "Machine Learning": "Machine Learning",
+      "Machine Learning Algorithms": "Machine Learning Algorithmen",
+      "Computer Vision": "Computer Vision",
+      "Supervised Machine Learning": "Supervised Machine Learning",
+      "Unsupervised Machine Learning": "Unsupervised Machine Learning",
+      "Deep Learning": "Deep Learning",
+      "Neural Networks": "Neural Networks",
+      "Reinforcement Learning": "Reinforcement Learning",
+      "Predictive Learning": "Predictive Learning",
+
       "Upcoming product ;)": "Bevorstehendes Produkt ;)",
+
       "Medium articles": "Medium Artikel",
+      "We write articles at medium ranging from mobile development lifehacks to Kubernetes and Machine Learning, you should definitely check them out": "Wir schreiben Artikel auf Medium, die von Lifehacks für die mobile Entwicklung über Kubernetes bis hin zu maschinellem Lernen reichen",
+      "Open articles": "Artikel öffnen",
+
       "Behaiv": "Behaiv",
+      "Behaiv is a high-level AI tool that helps users to navigate faster through the app," : "Behaiv ist ein hochrangiges KI-Tool, mit dem Benutzer schneller durch die App navigieren können,",
+      "predict what users want to open and take appropriate actions." : "vorhersagen, welche Benutzer öffnen möchten, und geeignete Maßnahmen ergreifen.",
+      "It was developed with a focus on simplicity of usage.": "Es wurde mit dem Schwerpunkt auf Benutzerfreundlichkeit entwickelt.",
+      "Instead of overwhelming developers with burden of implementation,": "Anstatt Entwickler mit Implementierungslast zu überfordern,",
+      "they only need to write few lines of code.": "müssen sie nur wenige Codezeilen schreiben.",
+      "Our company covers Java, Swift, Python and Javascript versions of this library": "Unser Unternehmen umfasst Java-, Swift-, Python- und Javascript-Versionen dieser Bibliothek",
+      "Look through our library": "Schauen Sie sich unsere Bibliothek an",
+
       "YouTube Lessons": "YouTube-Lektionen",
+      "We have small youtube channel where we put some lessons and discussions about different AI, ML and Software Engineering topics": "Wir haben einen kleinen Youtube-Kanal, in dem wir einige Lektionen und Diskussionen zu verschiedenen AI-, ML- und Software-Engineering-Themen anbieten",
+      "Visit YouTube channel": "Besuchen Sie den YouTube-Kanal",
+
+
       "Lovepons": "Lovepons",
       "Your next project?": "Dein nächstes Projekt?",
       "IOT/Scooter Business services": "IOT / Scooter Business-Dienstleistungen",
