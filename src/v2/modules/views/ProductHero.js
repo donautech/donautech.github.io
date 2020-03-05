@@ -42,7 +42,7 @@ function ProductHero(props) {
         {t("Let's bring your ideas to life")}
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        {t("Customers choose our company not because of technologies, but because of versatility and commitment")}
+        {t("We provide best verified IT qualification to companies")}
       </Typography>
       <Button
         color="secondary"
