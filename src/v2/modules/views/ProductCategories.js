@@ -264,96 +264,64 @@ function ProductCategories(props) {
   const machineLearningContent = [
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title}>{t('Machine Learning Algorithms')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title}>{t('Machine Learning Algorithms')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/backend.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title}>{t('Computer Vision')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title}>{t('Computer Vision')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/mobile+pc.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title}>{t('Supervised Machine Learning')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title}>{t('Supervised Machine Learning')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/mobile+pc.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__titleWithoutPadding}>{t('Unsupervised Machine Learning')}:</div>
+        <div className={classes.dialogproductAndSoftItem__titleWithoutPadding}>{t('Unsupervised Machine Learning')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/db.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title}>{t('Deep Learning')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title}>{t('Deep Learning')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/blockchain.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Neural Networks')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Neural Networks')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/backend.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Reinforcement Learning')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Reinforcement Learning')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/blockchain.png',
     },
     {
       block: (<div>
-        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Predictive Learning')}:</div>
+        <div className={classes.dialogproductAndSoftItem__title} style={{paddingTop: '10px'}}>{t('Predictive Learning')}</div>
         <div className={classes.dialogproductAndSoftItem__item}>
-          Machine learning is a method of data analysis that automates analytical 
-          model building. It is a branch of artificial intelligence based on the 
-          idea that systems can learn from data, identify patterns and make decisions 
-          with minimal human intervention.
         </div>
       </div>),
       imgUrl: '/img/db.png',
