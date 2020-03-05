@@ -10,11 +10,12 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 
 function Copyright() {
+  const { t, i18n } = useTranslation();
   return (
     <React.Fragment>
       {'© '}
       <Link color="inherit" href="/">
-        DonauTech OÜ
+        {t("DonauTech OÜ")}
       </Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
@@ -112,20 +113,24 @@ export default function AppFooter() {
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
             <Typography variant="h6" marked="left" gutterBottom>
-              Legal
+              {t("Legal")}
             </Typography>
             <ul className={classes.list}>
               <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
+                <Link href="/premium-themes/onepirate/terms/">
+                  {t("Terms")}
+                </Link>
               </li>
               <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
+                <Link href="/premium-themes/onepirate/privacy/">
+                  {t("Privacy")}
+                </Link>
               </li>
             </ul>
           </Grid>
           <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>
-              Language
+              {t("Language")}
             </Typography>
             <TextField
               select
@@ -144,15 +149,15 @@ export default function AppFooter() {
           </Grid>
           <Grid item>
             <Typography variant="caption">
-              {'Icons made by '}
+              {t("Icons made by ")}
               <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
-                Freepik
+                {t("Freepik")}
               </Link>
-              {' from '}
+              {t("from")}
               <Link href="https://www.flaticon.com" rel="sponsored" title="Flaticon">
                 www.flaticon.com
               </Link>
-              {' is licensed by '}
+              {t("is licensed by")}
               <Link
                 href="https://creativecommons.org/licenses/by/3.0/"
                 title="Creative Commons BY 3.0"

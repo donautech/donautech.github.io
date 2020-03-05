@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import { useTranslation } from 'react-i18next';
 
 const backgroundImage =
   '../../../img/donau_bg.png';
@@ -31,16 +32,17 @@ const styles = theme => ({
 
 function ProductHero(props) {
   const { classes } = props;
+  const { t, i18n } = useTranslation();
 
   return (
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Let's bring your ideas to life
+        {t("Let's bring your ideas to life")}
       </Typography>
       <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-          Customers choose our company not because of technologies, but because of versatility and commitment
+        {t("We provide best verified IT qualification to companies")}
       </Typography>
       <Button
         color="secondary"
@@ -50,10 +52,10 @@ function ProductHero(props) {
         component="a"
         href="mailto:info@donau.tech?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding our company/product!%0d%0d Please contact us by any of the contacts below:"
       >
-        Bootstrap your product
+        {t("Bootstrap your product")}
       </Button>
       <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
+        {t("Discover the experience")}
       </Typography>
     </ProductHeroLayout>
   );

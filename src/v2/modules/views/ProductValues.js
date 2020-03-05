@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import { useTranslation } from 'react-i18next';
 
 const styles = theme => ({
   root: {
@@ -39,6 +40,7 @@ const styles = theme => ({
 
 function ProductValues(props) {
   const { classes } = props;
+  const { t, i18n } = useTranslation();
 
   return (
     <section className={classes.root}>
@@ -57,11 +59,11 @@ function ProductValues(props) {
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>
-                Long-term relationships
+                {t("Long-term relationships")}
               </Typography>
               <Typography variant="h5">
-                {'We\'re aiming for long-term relationships'}
-                {', there\'s no place for such things as fraud or overcharges.'}
+                {t('We\'re aiming for long-term relationships')}
+                {t(', there\'s no place for such things as fraud or overcharges.')}
               </Typography>
             </div>
           </Grid>
@@ -73,11 +75,11 @@ function ProductValues(props) {
                 alt="graph"
               />
               <Typography variant="h6" className={classes.title}>
-                Best technology stack
+                {t('Best technology stack')}
               </Typography>
               <Typography variant="h5">
-                {'We use technologies that proven themselves over the long run'}
-                {', but it doesn\'t mean there\'s no place for something new.'}
+                {t('We use technologies that proven themselves over the long run')}
+                {t(', but it doesn\'t mean there\'s no place for something new.')}
               </Typography>
             </div>
           </Grid>
@@ -89,11 +91,11 @@ function ProductValues(props) {
                 alt="clock"
               />
               <Typography variant="h6" className={classes.title}>
-                Real customer centricity
+                {t('Real customer centricity')}
               </Typography>
               <Typography variant="h5">
-                {'We have absolutely fantastic system for managing your product, '}
-                {'with dashboard, PMS, and even AI forecasts.'}
+                {t('We have absolutely fantastic system for managing your product, ')}
+                {t('with dashboard, PMS, and even AI forecasts.')}
               </Typography>
             </div>
           </Grid>
