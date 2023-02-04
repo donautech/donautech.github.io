@@ -63,17 +63,17 @@ function ProductCTA(props) {
   const {classes} = props;
   const [open, setOpen] = React.useState(false);
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    fetch('https://gmx.us20.list-manage.com/subscribe/post?u=270d60d5d5a2d14fdc4f7d52b&id=d3ca9d9513', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    });
-    setOpen(true);
-  };
+//   const handleSubmit = event => {
+//     event.preventDefault();
+//     fetch('https://gmx.us20.list-manage.com/subscribe/post?u=270d60d5d5a2d14fdc4f7d52b&id=d3ca9d9513', {
+//       method: 'POST',
+//       headers: {
+//         Accept: 'application/json',
+//         'Content-Type': 'application/json',
+//       },
+//     });
+//     setOpen(true);
+//   };
 
   const handleClose = () => {
     setOpen(false);
@@ -90,7 +90,6 @@ function ProductCTA(props) {
               <Typography variant="h5">
                 {t("Email keith@siilats.com for any new business opportunities")}
               </Typography>
-            </form>
           </div>
         </Grid>
         <Grid item xs={12} md={6} className={classes.imagesWrapper}>
