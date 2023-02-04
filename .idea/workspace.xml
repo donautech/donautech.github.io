@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="922bef22-aeb2-4859-9d89-28fe57594f3e" name="Default Changelist" comment="updated main CTA">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/node.js.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/node.js.yml" afterDir="false" />
+    <list default="true" id="922bef22-aeb2-4859-9d89-28fe57594f3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/static.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/static.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583392948680</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="updated main CTA">
+      <created>1675551863770</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675551863770</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -415,8 +418,8 @@
     <MESSAGE value="updated more links" />
     <MESSAGE value="deployed website" />
     <MESSAGE value="added german translation for main page" />
-    <MESSAGE value="updated main CTA" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated main CTA" />
+    <MESSAGE value="github pages as action" />
+    <option name="LAST_COMMIT_MESSAGE" value="github pages as action" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
