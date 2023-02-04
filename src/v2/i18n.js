@@ -37,6 +37,7 @@ const resources = {
 
       "Keep in touch": "Keep in touch",
       "We\'ll send you our offers, vacancies and articles once a month": "We\'ll send you our offers, vacancies and articles once a month",
+      "Email keith@siilats.com for any new business opportunities": "Email keith@siilats.com for any new business opportunities",
       "Keep me updated": "Keep me updated",
 
       "Interested in our company? Contact us!": "Interested in our company? Contact us!",
@@ -90,6 +91,7 @@ const resources = {
 
       "Keep in touch": "Lass uns in Kontakt bleiben",
       "We\'ll send you our offers, vacancies and articles once a month": "Wir senden Ihnen einmal im Monat unsere Angebote, Stellenangebote und Artikel",
+      "Email keith@siilats.com for any new business opportunities": "Email keith@siilats.com bitte",
       "Keep me updated": "Halte mich auf dem Laufenden",
       "Interested in our company? Contact us!": "Interessiert an unserer Firma? Kontaktiere uns!",
       "We are here to help. Get in touch!": "Wir sind hier um zu helfen.",
