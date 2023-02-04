@@ -50,7 +50,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="mailto:info@donau.tech?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding our company/product!%0d%0d Please contact us by any of the contacts below:"
+        href="mailto:keith@siilats.com?subject=I want free AI consultancy&body=Hello DonauTech!%0d%0dWe would like to receive free AI consultancy regarding our company/product!%0d%0d Please contact us by any of the contacts below:"
       >
         {t("Bootstrap your product")}
       </Button>
