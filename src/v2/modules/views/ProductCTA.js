@@ -84,24 +84,12 @@ function ProductCTA(props) {
       <Grid container>
         <Grid item xs={12} md={6} className={classes.cardWrapper}>
           <div className={classes.card}>
-            <form action="https://gmx.us20.list-manage.com/subscribe/post?u=270d60d5d5a2d14fdc4f7d52b&id=d3ca9d9513"
-                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                  target="_blank" noValidate className={classes.cardContent}>
               <Typography variant="h2" component="h2" gutterBottom>
                 {t("Keep in touch")}
               </Typography>
               <Typography variant="h5">
-                {t("We'll send you our offers, vacancies and articles once a month")}
+                {t("Email keith@siilats.com for any new business opportunities")}
               </Typography>
-              <input type="email" className="form-control required" name="EMAIL"
-                     placeholder="name@example.com" id="mce-EMAIL"/>
-              <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input
-                type="text" name="b_270d60d5d5a2d14fdc4f7d52b_d3ca9d9513" tabIndex={-1}
-                defaultValue/></div>
-              <Button id="mc-embedded-subscribe" type="submit" defaultValue="Subscribe" color="primary"
-                      variant="contained" className={classes.button}>
-                {t("Keep me updated")}
-              </Button>
             </form>
           </div>
         </Grid>
